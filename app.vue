@@ -29,5 +29,10 @@
       label="Name"
       name="name"
     />
+
+    <FindYourCar />
   </div>
 </template>
+<script lang="ts" setup>
+import FindYourCar from "@/formkit-components/FindYourCar.vue";
+</script>

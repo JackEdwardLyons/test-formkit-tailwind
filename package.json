@@ -8,7 +8,8 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "3.0.0"
+    "nuxt": "3.0.0",
+    "sass": "^1.69.7"
   },
   "dependencies": {
     "@formkit/addons": "^1.0.0-beta.12",
