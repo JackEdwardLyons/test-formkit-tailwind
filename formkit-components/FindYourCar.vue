@@ -1,17 +1,52 @@
 <template>
   <div class="pl-20">
     <h2>Find Your Car</h2>
-    <div class="autocomplete-select-icon">
+    <div class="autocomplete-select-icon max-w-[250px]">
       <FormKit
         type="autocomplete"
         name="make-search"
         label="Find your make"
         placeholder="Please select"
-        help="some help text"
         empty-message="No results match"
         validation="required"
         error-behaviour="live"
         :options="makes"
+      />
+
+      <br />
+      <FormKit
+        type="autocomplete"
+        name="model-search"
+        label="Find your model"
+        placeholder="Please select"
+        empty-message="No results match"
+        validation="required"
+        error-behaviour="live"
+        :options="models"
+      />
+
+      <br />
+      <FormKit
+        type="autocomplete"
+        name="series-search"
+        label="Find your series"
+        placeholder="Please select"
+        empty-message="No results match"
+        validation="required"
+        error-behaviour="live"
+        :options="series"
+      />
+
+      <br />
+      <FormKit
+        type="autocomplete"
+        name="body-search"
+        label="Find your body"
+        placeholder="Please select"
+        empty-message="No results match"
+        validation="required"
+        error-behaviour="live"
+        :options="body"
       />
     </div>
   </div>
@@ -27,8 +62,8 @@ const makes = ref([
     label: "Ford",
   },
   {
-    value: "mustang",
-    label: "Mustang",
+    value: "mercedes",
+    label: "Mercedes",
   },
   {
     value: "tesla",
@@ -37,6 +72,63 @@ const makes = ref([
   {
     value: "bmw",
     label: "BMW",
+  },
+]);
+
+const models = ref([
+  {
+    value: "f150",
+    label: "F-150",
+  },
+  {
+    value: "fiesta",
+    label: "Fiesta",
+  },
+  {
+    value: "mustang",
+    label: "Mustang",
+  },
+  {
+    value: "focus",
+    label: "Focus",
+  },
+]);
+
+const series = ref([
+  {
+    value: "premium",
+    label: "Premium",
+  },
+  {
+    value: "4x4",
+    label: "4x4",
+  },
+  {
+    value: "platinum",
+    label: "Platinum",
+  },
+  {
+    value: "gold",
+    label: "Gold",
+  },
+]);
+
+const body = ref([
+  {
+    value: "sedan",
+    label: "Sedan",
+  },
+  {
+    value: "4x4",
+    label: "4x4",
+  },
+  {
+    value: "wagon",
+    label: "Wagon",
+  },
+  {
+    value: "convertible",
+    label: "Convertible",
   },
 ]);
 </script>
